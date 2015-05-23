@@ -1,0 +1,21 @@
+{
+  "name": "razor",
+  "version": "0.1.0",
+  "description": "",
+  "license": "MIT",
+  "repository": "filipelinhares/razor",
+  "author": {
+    "name": "Filipe Linhares",
+    "email": "lip.linhares@gmail.com",
+    "url": "http://filipelinhares.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "cli"
+  ]
+}
