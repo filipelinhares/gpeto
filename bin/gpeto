@@ -9,6 +9,7 @@ var path      = require('path');
 
 process.title = 'gpeto';
 
+// === CLI options
 var shorthand            = { 'v': ['--version'], 'h': ['--help'], 'o': ['--out'] };
 var options              = { 'version': Boolean, 'out': path };
 var cli                  = nopt(options, shorthand, process.argv);

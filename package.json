@@ -4,19 +4,12 @@
   "description": "",
   "license": "MIT",
   "repository": "filipelinhares/gpeto",
-  "author": {
-    "name": "Filipe Linhares",
-    "email": "lip.linhares@gmail.com",
-    "url": "http://filipelinhares.com"
-  },
-  "engines": {
-    "node": ">=0.10.0"
-  },
-  "files": [
-    "index.js"
-  ],
+  "author": "Filipe <filipelinhares.com>" ,
+  "bin": { "gpeto": "bin/gpeto" },
+  "engines": { "node": ">=0.10.0" },
   "keywords": [
-    "cli"
+    "cli",
+    "components"
   ],
   "dependencies": {
     "chalk": "^1.0.0",
