@@ -3,10 +3,9 @@
 'use strict';
 
 var nopt      = require('nopt');
-var path      = require('path');''
-var pkg       = require(path.join(__dirname, '..', 'package.json'));
 var commands  = require('../lib/commands');
-var messages  = require('../lib/helpers/messages');
+var util      = require('../lib/utils');
+var path      = require('path');
 
 process.title = 'gpeto';
 
@@ -17,12 +16,11 @@ var command              = cli.argv.remain[0];
 var args                 = cli.argv.remain.slice(1);
 var gpetoCommand         = commands[command];
 
-if (cli.version) return console.log(pkg.version);
-if (cli.help) return console.log(messages.help);
+if (cli.version) return util.message.version();
+if (cli.help) return util.message.help();
 
-if (command !== 'install' && command !== 'add') {
-  console.log('Help bitch');
-  process.exit();
+if (command !== 'install' && command !== 'add' || !command) {
+  util.message.help();
 }
 
 gpetoCommand(args, cli.out || null);
