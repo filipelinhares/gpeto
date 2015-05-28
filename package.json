@@ -4,9 +4,13 @@
   "description": "",
   "license": "MIT",
   "repository": "filipelinhares/gpeto",
-  "author": "Filipe <filipelinhares.com>" ,
-  "bin": { "gpeto": "bin/gpeto" },
-  "engines": { "node": ">=0.10.0" },
+  "author": "Filipe <filipelinhares.com>",
+  "bin": {
+    "gpeto": "bin/gpeto"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
   "keywords": [
     "cli",
     "components"
