@@ -1,9 +1,9 @@
 {
-  "name": "razor",
+  "name": "gpeto",
   "version": "0.1.0",
   "description": "",
   "license": "MIT",
-  "repository": "filipelinhares/razor",
+  "repository": "filipelinhares/gpeto",
   "author": {
     "name": "Filipe Linhares",
     "email": "lip.linhares@gmail.com",
@@ -17,5 +17,13 @@
   ],
   "keywords": [
     "cli"
-  ]
+  ],
+  "dependencies": {
+    "chalk": "^1.0.0",
+    "extfs": "0.0.7",
+    "fs-extra": "^0.18.4",
+    "nopt": "^3.0.2",
+    "pretty-hrtime": "^1.0.0",
+    "userhome": "^1.0.0"
+  }
 }
