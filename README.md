@@ -45,6 +45,19 @@ gpeto install bootstrap/less/progress.less
 
 If you don't specify a folder with the `--out` flag, all components will be installed in gpeto_components folder.
 
+## Avaliable commands
+
+Commands:
+- `install`
+- `uninstall`
+- `add`
+- `remove`
+
+Flags:
+- `--out` - `-o`
+- `--vesrion` - `-v`
+- `--help` - `-h`
+
 ## Caution
 gPeto doesn't install dependencies automatically yet, but I'm working on some way of doing that. 
 
@@ -52,7 +65,7 @@ gPeto doesn't install dependencies automatically yet, but I'm working on some wa
 Your contributions and suggestions are :heart: welcome.
 
 ## Todo
-- [ ] Add `remove` and `uninstall` commands
+- [x] Add `remove` and `uninstall` commands
 - [ ] Install dependencies automatically
 
 ## License
