@@ -20,8 +20,11 @@ var gpetoCommand         = commands[command];
 if (cli.version) return util.message.version();
 if (cli.help) return util.message.help();
 
-if (command !== 'install' && command !== 'add' || !command) {
-  util.message.help();
+// === Check if the commands exist
+for (var i in commands) {
+  if (!commands.hasOwnProperty(command)) {
+    util.message.help();
+  }
 }
 
 gpetoCommand(args, cli.out || null);
